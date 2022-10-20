@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Profile from './Profile/Profile';
 
 function App() {
+  let fullName = 'Emna';
+  let Bio = 'Web dev';
+  let Profession = 'Enginneer';
+  let handleName = (n) => alert(`${n} is the user name`);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Profile A={fullName} B={Bio} C={Profession} fnc={handleName}>
+        <img
+          src='https://img.freepik.com/vecteurs-libre/petite-fille-asiatique-pointant-index-kid-montrant-direction-faisant-attention-au-geste_71593-1028.jpg?w=2000'
+          style={{ width: '200p', height: '200px' }}
+          alt=''
+        />
+      </Profile>
     </div>
   );
 }
